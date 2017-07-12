@@ -1,6 +1,6 @@
 # crystal-vix
 
-TODO: Write a description here
+Crystal binding and librery to use VMware VIX interface for controling ESX\ESXi hosts and guests  
 
 ## Installation
 
@@ -9,7 +9,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   crystal-vix:
-    github: [your-github-name]/crystal-vix
+    github: bararchy/crystal-vix
 ```
 
 ## Usage
@@ -20,13 +20,18 @@ require "crystal-vix"
 
 TODO: Write usage instructions here
 
-## Development
+## Development  
 
-TODO: Write development instructions here
+Docs and original DSK here: https://www.vmware.com/support/developer/vix-api/
+
+- [ ] Add guest machine control  
+- [ ] Add host machine control  
+- [ ] Add guest command execution  
+- [ ] Add basic CLI util  
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/crystal-vix/fork )
+1. Fork it ( https://github.com/bararchy/crystal-vix/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -34,4 +39,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) bararchy - creator, maintainer
+- [bararchy](https://github.com/bararchy) - creator, maintainer
