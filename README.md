@@ -1,6 +1,6 @@
 # crystal-vix
 
-Crystal binding and librery to use VMware VIX interface for controling ESX\ESXi hosts and guests  
+Crystal binding and library to use VMware VIX interface for controlling ESX\ESXi hosts and guests  
 
 ## Installation
 
@@ -22,7 +22,7 @@ TODO: Write usage instructions here
 
 ## Development  
 
-Docs and original DSK here: https://www.vmware.com/support/developer/vix-api/
+Docs and original SDK here: https://www.vmware.com/support/developer/vix-api/
 
 - [ ] Add guest machine control  
 - [ ] Add host machine control  
