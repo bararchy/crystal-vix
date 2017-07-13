@@ -4,7 +4,7 @@ module Crystal::Vix
       @username = username
       @password = password
       @hostname = hostname
-      @host = connect_to_host
+      puts connect_to_host
     end
 
     def connect_to_host
@@ -27,12 +27,18 @@ module Crystal::Vix
         @username,
         @password,
         0,
-        LibVIX::InvalidHandle
+        LibVIX::InvalidHandle,
+        nil,
+        nil
       )
 
       # Test is the job errored out
       # job_wait = VixJob_Wait(job_handle : Handle, first_property_id : PropertyId, ...) : Error
-      LibVIX.job_wait(job_handler)
+      error = LibVIX.job_get_error(job_handle)
+      if error != 0
+        raise "Error connecting to host: #{LibVIX::VIXError.new(error.to_i32)}"
+      end
+      job_handle
     end
   end
 end
